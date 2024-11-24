@@ -30,14 +30,14 @@
 			<p>Today we'll be focusing on coding a form that is accessible and semantic, and we'll also briefly discuss skip links for your website. Forms can be a source of frustration for users, whether they specifically need help with accessing your website or if they just prefer that your forms be easy to use and submit. Follow along as we code this in class, and please ask questions as they arise. Let's make a form!</p>
 
 <!-- 	-------- TO-DO: ADD FORM CODE HERE DURING CLASS, FOLLOW ALONG TO COMPLETE -------- -->
-			<form>
-				<label for="fullname">Full Name</label>
+			<form action="/submit-form" method="post">
+				<label for="fullname">Full Name<span class="required">*</span></label>
 				<input type="text" id="fullname" name="fullname">
 
-				<label for="email">Email</label>
+				<label for="email">Email<span class="required">*</span></label>
 				<input type="text" id="email" name="email">
 
-				<label for="phone">Phone</label>
+				<label for="phone">Phone<span class="required">*</span></label>
 				<input type="tel" id="phone" name="phone">
 
 				<fieldset>
@@ -49,7 +49,7 @@
 				</fieldset>
 
 				<fieldset>
-					<label for="state">State of Residence</label>
+					<legend>State of Residence<span class="required">*</span></legend>
 					<select id="state" name="state">
 						<option value="Alabama">Alabama</option>
 						<option value="Alaska">Alaska</option>
@@ -75,34 +75,39 @@
 						<option value="Michigan">Michigan</option>
 						<option value="Minnesota">Minnesota</option>
 						<option value="Mississippi">Minnesota</option>
-						<option value="Missouri">Minnesota</option>
-						<option value="Montana">Minnesota</option>
-						<option value="Nebraska">Minnesota</option>
-						<option value="Nevada">Minnesota</option>
-						<option value="New Hampshire">Minnesota</option>
-						<option value="New Jersey">Minnesota</option>
-						<option value="New Mexico">Minnesota</option>
-						<option value="New York">Minnesota</option>
-						<option value="North Carolina">Minnesota</option>
-						<option value="North Dakota">Minnesota</option>
-						<option value="Ohio">Minnesota</option>
-						<option value="Oklahoma">Minnesota</option>
-						<option value="Oregon">Minnesota</option>
-						<option value="Pennsylvania">Minnesota</option>
-						<option value="Rhode Island">Minnesota</option>
-						<option value="South Carolina">Minnesota</option>
-						<option value="South Dakota">Minnesota</option>
-						<option value="Tennessee">Minnesota</option>
-						<option value="Texas">Minnesota</option>
-						<option value="Utah">Minnesota</option>
-						<option value="Vermont">Minnesota</option>
-						<option value="Virginia">Minnesota</option>
-						<option value="Washington">Minnesota</option>
-						<option value="West Virginia">Minnesota</option>
-						<option value="Wisconsin">Minnesota</option>
-						<option value="Wyoming">Minnesota</option>
+						<option value="Missouri">Missouri</option>
+						<option value="Montana">Montana</option>
+						<option value="Nebraska">Nebraska</option>
+						<option value="Nevada">Nevada</option>
+						<option value="New Hampshire">New Hampshire</option>
+						<option value="New Jersey">New Jersey</option>
+						<option value="New Mexico">New Mexico</option>
+						<option value="New York">New York</option>
+						<option value="North Carolina">North Carolina</option>
+						<option value="North Dakota">North Dakota</option>
+						<option value="Ohio">Ohio</option>
+						<option value="Oklahoma">Oklahoma</option>
+						<option value="Oregon">Oregon</option>
+						<option value="Pennsylvania">Pennsylvania</option>
+						<option value="Rhode Island">Rhode Island</option>
+						<option value="South Carolina">South Carolina</option>
+						<option value="South Dakota">South Dakota</option>
+						<option value="Tennessee">Tennessee</option>
+						<option value="Texas">Texas</option>
+						<option value="Utah">Utah</option>
+						<option value="Vermont">Vermont</option>
+						<option value="Virginia">Virginia</option>
+						<option value="Washington">Washington</option>
+						<option value="West Virginia">West Virginia</option>
+						<option value="Wisconsin">Wisconsin</option>
+						<option value="Wyoming">Wyoming</option>
 					</select>
 				</fieldset>
+
+				<label for="textarea">Comments<span class="required">*</span></label>
+				<textarea id="textarea" id="comment" name="comment">
+
+				<input type="submit">
 			</form>
 		</article>
 	</main>
